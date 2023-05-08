@@ -8,10 +8,16 @@ interface BaseLayoutProps {
 
 export function Base({ children }: BaseLayoutProps) {
   return (
-    <div className="text-gray-100 min-h-screen">
-      <Navbar />
-      {children}
-      <Footer />
+    <div className="h-screen flex flex-col">
+      <div className="flex grow">
+        <div className="text-gray-100">
+          <Navbar />
+          {children}
+        </div>
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
