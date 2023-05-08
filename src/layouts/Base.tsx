@@ -9,7 +9,7 @@ interface BaseLayoutProps {
 export function Base({ children }: BaseLayoutProps) {
   return (
     <div className="h-screen flex flex-col">
-      <div className="flex grow">
+      <div className="flex grow justify-center">
         <div className="text-gray-100">
           <Navbar />
           {children}
