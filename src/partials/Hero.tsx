@@ -1,11 +1,4 @@
 import { GradientText, Section, HeroAvatar } from "../components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import {
-  faLinkedin,
-  faGithub,
-  faTwitter
-} from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => (
   <Section>
