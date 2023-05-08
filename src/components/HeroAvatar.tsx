@@ -4,14 +4,13 @@ type IHeroAvatarProps = {
   title: ReactNode;
   description: ReactNode;
   avatar: ReactNode;
-  socialButtons: ReactNode;
 };
 
 const HeroAvatar = (props: IHeroAvatarProps) => (
   <div className="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
     <div>
       <h1 className="text-2xl md:text-3xl font-bold">{props.title}</h1>
-      <div className="mt-3 flex gap-1">{props.socialButtons}</div>
+
       <h1 className="mt-6 text-2xl md:text-3xl font-bold">About Me</h1>
 
       <p className="md:text-xl">{props.description}</p>
